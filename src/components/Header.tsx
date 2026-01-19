@@ -10,32 +10,41 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-3 transition-transform hover:scale-105">
-          {/* Logo Icon/Badge */}
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-gray-900 to-gray-700 shadow-lg">
-            <svg 
-              className="h-7 w-7 text-white" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke="currentColor"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" 
-              />
-            </svg>
+        <a href="/" className="flex items-center gap-2 transition-transform hover:scale-105">
+          {/* New Partiq Logo */}
+          <div style={{
+            fontSize: '36px',
+            fontWeight: '900',
+            letterSpacing: '-2px',
+            background: 'linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            position: 'relative',
+            paddingBottom: '6px'
+          }}>
+            Partiq
+            <div style={{
+              position: 'absolute',
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: '3px',
+              background: 'linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%)',
+              borderRadius: '2px'
+            }} />
           </div>
           
-          {/* Brand Name */}
-          <div>
-            <div className="text-3xl font-bold tracking-tight text-gray-900">
-              Partiq
-            </div>
-            <div className="text-xs font-medium tracking-wide text-gray-500">
-              PRECISION SOURCING
-            </div>
+          {/* Tagline */}
+          <div style={{
+            fontSize: '9px',
+            letterSpacing: '2px',
+            textTransform: 'uppercase',
+            color: '#666',
+            fontWeight: '600',
+            marginLeft: '4px'
+          }}>
+            Precision Sourcing
           </div>
         </a>
 
