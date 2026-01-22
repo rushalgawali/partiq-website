@@ -6,6 +6,7 @@ import CapabilitiesSection from "@/components/CapabilitiesSection";
 import CNCVMCShowcase from "@/components/CNCVMCShowcase";
 import Reveal from "@/components/Reveal";
 import Clients from "@/components/Clients";
+import ProcessTimeline from "@/components/ProcessTimeline";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
 
       {/* Stats Counter */}
       <StatsCounter />
+
+      {/* HOW WE OPERATE - NEW SECTION */}
+      <ProcessTimeline />
 
       {/* CNC & VMC Showcase */}
       <CNCVMCShowcase />
