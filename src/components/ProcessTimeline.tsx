@@ -211,7 +211,7 @@ const TimelineProcessFlow = () => {
           className="flex flex-wrap justify-center gap-3 mb-16"
         >
           {phases.map((phase, index) => {
-            const phaseColor = phaseColors[phase];
+            const phaseColor = phaseColors[phase as keyof typeof phaseColors];
             return (
               <motion.div
                 key={phase}
@@ -258,7 +258,7 @@ const TimelineProcessFlow = () => {
             {processes.map((process, index) => {
               const Icon = process.icon;
               const isLeft = index % 2 === 0;
-              const colors = phaseColors[process.phase];
+              const colors = phaseColors[process.phase as keyof typeof phaseColors];
               const isActive = activeStep === process.id;
 
               return (
