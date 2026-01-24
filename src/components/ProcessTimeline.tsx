@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { 
@@ -22,7 +23,7 @@ import {
 } from 'lucide-react';
 
 const TimelineProcessFlow = () => {
-  const [activeStep, setActiveStep] = useState(null);
+  const [activeStep, setActiveStep] = useState<number | null>(null);
   const containerRef = useRef(null);
 
   // Define phase types
