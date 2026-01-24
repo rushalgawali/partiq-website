@@ -1,16 +1,39 @@
 'use client';
 
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { 
-  FileText, Search, FileEdit, CheckCircle, Package, Settings, 
-  ClipboardCheck, Factory, Shield, Truck, BarChart, MessageSquare,
-  ArrowRight, Clock, CheckCircle2, Users
+  FileText, 
+  Search, 
+  FileEdit, 
+  CheckCircle, 
+  Package, 
+  Settings, 
+  ClipboardCheck, 
+  Factory, 
+  Shield, 
+  Truck, 
+  BarChart, 
+  MessageSquare,
+  ArrowRight, 
+  Clock, 
+  CheckCircle2, 
+  Users
 } from 'lucide-react';
 
 const TimelineProcessFlow = () => {
   const [activeStep, setActiveStep] = useState(null);
   const containerRef = useRef(null);
+
+  // Define phase types
+  const phaseColors = {
+    Discovery: { gradient: "from-blue-500 to-blue-600", text: "text-blue-600", bg: "bg-blue-50", border: "border-blue-500" },
+    Engineering: { gradient: "from-purple-500 to-purple-600", text: "text-purple-600", bg: "bg-purple-50", border: "border-purple-500" },
+    Prototyping: { gradient: "from-orange-500 to-orange-600", text: "text-orange-600", bg: "bg-orange-50", border: "border-orange-500" },
+    Validation: { gradient: "from-green-500 to-green-600", text: "text-green-600", bg: "bg-green-50", border: "border-green-500" },
+    Manufacturing: { gradient: "from-red-500 to-red-600", text: "text-red-600", bg: "bg-red-50", border: "border-red-500" },
+    Fulfillment: { gradient: "from-teal-500 to-teal-600", text: "text-teal-600", bg: "bg-teal-50", border: "border-teal-500" }
+  };
 
   const processes = [
     { 
@@ -147,15 +170,6 @@ const TimelineProcessFlow = () => {
     }
   ];
 
-  const phaseColors = {
-    "Discovery": { gradient: "from-blue-500 to-blue-600", text: "text-blue-600", bg: "bg-blue-50", border: "border-blue-500" },
-    "Engineering": { gradient: "from-purple-500 to-purple-600", text: "text-purple-600", bg: "bg-purple-50", border: "border-purple-500" },
-    "Prototyping": { gradient: "from-orange-500 to-orange-600", text: "text-orange-600", bg: "bg-orange-50", border: "border-orange-500" },
-    "Validation": { gradient: "from-green-500 to-green-600", text: "text-green-600", bg: "bg-green-50", border: "border-green-500" },
-    "Manufacturing": { gradient: "from-red-500 to-red-600", text: "text-red-600", bg: "bg-red-50", border: "border-red-500" },
-    "Fulfillment": { gradient: "from-teal-500 to-teal-600", text: "text-teal-600", bg: "bg-teal-50", border: "border-teal-500" }
-  };
-
   const phases = ["Discovery", "Engineering", "Prototyping", "Validation", "Manufacturing", "Fulfillment"];
 
   return (
@@ -196,25 +210,26 @@ const TimelineProcessFlow = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="flex flex-wrap justify-center gap-3 mb-16"
         >
-          {phases.map((phase, index) => (
-            <motion.div
-              key={phase}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 * index, duration: 0.4 }}
-              whileHover={{ scale: 1.05 }}
-              className={`px-5 py-2.5 rounded-full bg-gradient-to-r ${phaseColors[phase].gradient} text-white text-sm font-semibold shadow-md hover:shadow-lg transition-all cursor-pointer`}
-            >
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
-                {phase}
-              </div>
-            </motion.div>
-          ))}
+          {phases.map((phase, index) => {
+            const phaseColor = phaseColors[phase];
+            return (
+              <motion.div
+                key={phase}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 * index, duration: 0.4 }}
+                whileHover={{ scale: 1.05 }}
+                className={`px-5 py-2.5 rounded-full bg-gradient-to-r ${phaseColor.gradient} text-white text-sm font-semibold shadow-md hover:shadow-lg transition-all cursor-pointer`}
+              >
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
+                  {phase}
+                </div>
+              </motion.div>
+            );
+          })}
         </motion.div>
-
-
 
         {/* Timeline */}
         <div className="relative">
@@ -417,10 +432,6 @@ const TimelineProcessFlow = () => {
             })}
           </div>
         </div>
-
-
-
-
       </div>
     </div>
   );
