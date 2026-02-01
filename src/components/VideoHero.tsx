@@ -66,9 +66,8 @@ export default function VideoHero() {
 
           {/* Supporting Text */}
           <p className="mt-6 text-xl leading-relaxed text-gray-300 md:text-2xl">
-            Partiq connects global manufacturers with vetted precision machining partners specializing 
-            in CNC turning and VMC (Vertical Machining Center) operations. From prototype components 
-            to high-volume production — we handle sourcing, quality validation, and logistics.
+            Precision Manufacturing, Built for Scale.
+            Partiq enables fast, reliable production — from prototypes to volume manufacturing — with trusted global partners and seamless execution.
           </p>
 
           {/* CTAs */}
