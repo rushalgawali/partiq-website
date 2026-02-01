@@ -6,27 +6,37 @@ import CapabilitiesSection from "@/components/CapabilitiesSection";
 import CNCVMCShowcase from "@/components/CNCVMCShowcase";
 import Reveal from "@/components/Reveal";
 import Clients from "@/components/Clients";
-import ProcessTimeline from "@/components/TimelineProcessFlow";
+import ProcessTimeline from "@/components/ProcessFlowchart";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Header />
 
-      {/* VIDEO HERO - THIS SHOULD SHOW YOUR CNC VIDEO */}
-      <VideoHero />
+      {/* VIDEO HERO - Wrapped with max-width container */}
+      <div className="w-full">
+        <VideoHero />
+      </div>
 
-      {/* Stats Counter */}
-      <StatsCounter />
+      {/* Stats Counter - Add max-width constraint */}
+      <div className="w-full max-w-[1920px] mx-auto">
+        <StatsCounter />
+      </div>
 
-      {/* HOW WE OPERATE - NEW SECTION */}
-      <ProcessTimeline />
+      {/* HOW WE OPERATE - Add max-width constraint */}
+      <div className="w-full max-w-[1920px] mx-auto">
+        <ProcessTimeline />
+      </div>
 
-      {/* CNC & VMC Showcase */}
-      <CNCVMCShowcase />
+      {/* CNC & VMC Showcase - Add max-width constraint */}
+      <div className="w-full max-w-[1920px] mx-auto">
+        <CNCVMCShowcase />
+      </div>
 
-      {/* Capabilities */}
-      <CapabilitiesSection />
+      {/* Capabilities - Add max-width constraint */}
+      <div className="w-full max-w-[1920px] mx-auto">
+        <CapabilitiesSection />
+      </div>
 
       {/* About Section */}
       <Reveal>

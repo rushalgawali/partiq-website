@@ -43,7 +43,7 @@ const capabilities = [
 
 export default function CapabilitiesSection() {
   return (
-    <section id="capabilities" className="bg-gray-50 py-24">
+    <section id="capabilities" className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-4">
         {/* Section Header */}
         <motion.div

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function CNCVMCShowcase() {
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50 py-24">
+    <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-4">
         {/* Section Header */}
         <motion.div
