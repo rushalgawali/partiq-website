@@ -58,9 +58,10 @@ export default function VideoHero() {
 
           {/* Main Headline */}
           <h1 className="mt-6 text-5xl font-bold tracking-tight text-white md:text-7xl">
-            Superior Precision Parts Sourcing
+              Trusted Precision Manufacturing Partners
+
             <span className="mt-2 block bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              Delivering Quality, Speed & Reliability
+              Consistent Quality. On-Time Delivery. Reliable Scale.
             </span>
           </h1>
 
