@@ -33,7 +33,7 @@ export default function VideoHero() {
         {/* Very light overlay - just 20% for slight text contrast */}
         <div className="absolute inset-0 bg-black/20" />
       </div>
-
+      {/*
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-20 md:py-32">
         <motion.div
@@ -43,26 +43,51 @@ export default function VideoHero() {
           className="max-w-4xl"
         >
           {/* Status Badge */}
+        {/*
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
             className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-sm text-white backdrop-blur-sm"
           >
+          
+          
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
             </span>
             RFQ response typically within 24 hours
-          </motion.div>
+          
+          </motion.div> 
+        */}
 
           {/* Main Headline */}
           <h1 className="mt-6 text-5xl font-bold tracking-tight text-white md:text-7xl">
               Trusted Precision Manufacturing Partners
 
-            <span className="mt-2 block bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              Consistent Quality. On-Time Delivery. Reliable Scale.
+            <span className="mt-2 flex items-center gap-2 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="relative flex h-4 w-4">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex h-4 w-4 rounded-full bg-green-500"></span>
+              </span>
+            Consistent Quality
             </span>
+            <span className="mt-2 flex items-center gap-2 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="relative flex h-4 w-4">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex h-4 w-4 rounded-full bg-green-500"></span>
+              </span>
+            On-Time Delivery
+            </span>
+            <span className="mt-2 flex items-center gap-2 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="relative flex h-4 w-4">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex h-4 w-4 rounded-full bg-green-500"></span>
+              </span>
+            Reliable Scale
+            </span>            
+             
+            
           </h1>
 
           {/* Supporting Text */}

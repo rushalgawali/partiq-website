@@ -36,10 +36,19 @@ export default function ProcessFlowchart() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        {/* Word-by-word animated heading with curved box */}
-        <div className="flex justify-center mb-12">
+        {/* Tagline and heading section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <div className="inline-block rounded-full border border-[#00ff00] bg-[#00ff00]/10 px-4 py-1.5 text-sm font-medium text-gray-900">
+            STREAMLINED PROCESS
+          </div>
           <motion.h2
-            className="text-4xl font-bold text-center text-gray-900 bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-lg px-8 py-6 border border-gray-200 inline-block"
+            className="mt-4 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl"
             variants={container}
             initial="hidden"
             whileInView="visible"
@@ -55,7 +64,7 @@ export default function ProcessFlowchart() {
               </motion.span>
             ))}
           </motion.h2>
-        </div>
+        </motion.div>
         
         {/* Your flowchart with subtle animation */}
         <motion.div 
