@@ -44,7 +44,7 @@ export default function ProcessFlowchart() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <div className="inline-block rounded-full border border-[#00ff00] bg-[#00ff00]/10 px-4 py-1.5 text-sm font-medium text-gray-900">
+          <div className="inline-block rounded-full bg-gray-100 px-4 py-1.5 text-sm font-medium text-gray-600">
             STREAMLINED PROCESS
           </div>
           <motion.h2

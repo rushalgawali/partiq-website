@@ -14,7 +14,7 @@ export default function CNCVMCShowcase() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <div className="inline-block rounded-full bg-gray-900 px-4 py-1.5 text-sm font-medium text-white">
+          <div className="inline-block rounded-full bg-gray-100 px-4 py-1.5 text-sm font-medium text-gray-600">
             CORE CAPABILITIES
           </div>
           <h2 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">

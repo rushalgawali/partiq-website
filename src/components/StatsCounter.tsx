@@ -11,10 +11,10 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { number: 50, suffix: "+", label: "Vetted Supplier Partners" },
-  { number: 15, suffix: "+", label: "Countries Served" },
-  { number: 500, suffix: "+", label: "Successful Projects" },
-  { number: 24, suffix: "h", label: "Avg. RFQ Response Time" },
+  { number: 200, suffix: "+", label: "Suppliers" },
+  { number: 500, suffix: "+", label: "Buyers" },
+  { number: 7500, suffix: "+", label: "Parts Shipped" },
+  { number: 90, suffix: "+", label: "Successful Projects" },
 ];
 
 function Counter({ target, suffix = "", prefix = "" }: { target: number; suffix?: string; prefix?: string }) {
