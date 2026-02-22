@@ -62,32 +62,51 @@ export default function VideoHero() {
         */}
 
           {/* Main Headline */}
-          <h1 className="mt-6 text-5xl font-bold tracking-tight text-white md:text-7xl">
-              Trusted Precision Manufacturing Partners
+          <h1 className="mt-6 text-5xl font-bold tracking-tight md:text-7xl text-green-400">
+              Global Manufacturing Services Done Right
 
-            <span className="mt-2 flex items-center gap-2 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              <span className="relative flex h-4 w-4">
+          <span className="mt-2 flex items-center gap-2 text-base md:text-3xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="relative flex h-3 w-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex h-4 w-4 rounded-full bg-green-500"></span>
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
               </span>
-            Consistent Quality
+            End-to-end visibility from order to delivery, every single step
             </span>
-            <span className="mt-2 flex items-center gap-2 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              <span className="relative flex h-4 w-4">
+            <span className="mt-2 flex items-center gap-2 text-base md:text-3xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="relative flex h-3 w-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex h-4 w-4 rounded-full bg-green-500"></span>
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
               </span>
-            On-Time Delivery
+            Dedicated technical support from quote to final inspection
             </span>
-            <span className="mt-2 flex items-center gap-2 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              <span className="relative flex h-4 w-4">
+            <span className="mt-2 flex items-center gap-2 text-base md:text-3xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="relative flex h-3 w-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex h-4 w-4 rounded-full bg-green-500"></span>
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
               </span>
-            Reliable Scale
+            One platform, zero supply chain headaches
+            </span>           
+            <span className="mt-2 flex items-center gap-2 text-base md:text-3xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="relative flex h-3 w-3">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
+              </span>
+            Parts built to your exact specs, not close enough
+            </span>             
+            <span className="mt-2 flex items-center gap-2 text-base md:text-3xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="relative flex h-3 w-3">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
+              </span>
+            Engineering review before production — not after problems arise
+            </span> 
+            <span className="mt-2 flex items-center gap-2 text-base md:text-3xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="relative flex h-3 w-3">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
+              </span>
+            Flexible volumes, no minimum order quantity required
             </span>            
-             
-            
           </h1>
 
           {/* Supporting Text */}
@@ -114,22 +133,7 @@ export default function VideoHero() {
             </a>
           </div>
 
-          {/* Trust Indicators */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="mt-12 flex flex-wrap gap-3"
-          >
-            {["CNC Turning", "VMC Milling", "3-Axis to 5-Axis", "Quality Inspection", "Material Certs", "Export Packaging"].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm text-gray-300 backdrop-blur-sm"
-              >
-                {item}
-              </span>
-            ))}
-          </motion.div>
+
         </motion.div>
 
         {/* Quick Info Card */}
