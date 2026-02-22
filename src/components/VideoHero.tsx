@@ -62,7 +62,7 @@ export default function VideoHero() {
         */}
 
           {/* Main Headline */}
-          <h1 className="mt-6 text-5xl font-bold tracking-tight md:text-7xl text-green-400">
+          <h1 className="mt-6 text-5xl font-bold tracking-tight md:text-7xl bg-gradient-to-r from-green-400 to-emerald-300 bg-clip-text text-transparent">
               Global Manufacturing Services Done Right
 
           <span className="mt-2 flex items-center gap-2 text-base md:text-3xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
