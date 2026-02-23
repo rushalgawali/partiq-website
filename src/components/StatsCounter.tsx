@@ -91,7 +91,7 @@ export default function StatsCounter() {
               <div className="mt-3 text-base font-medium text-gray-600">
                 {stat.label}
               </div>
-              <div className="mt-4 h-1 w-12 rounded-full bg-gray-900 transition-all group-hover:w-20" />
+              <div className="mt-4 h-1 w-12 rounded-full bg-green-500 transition-all group-hover:w-20" />
             </motion.div>
           ))}
         </div>

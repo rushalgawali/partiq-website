@@ -45,9 +45,9 @@ export default function Footer() {
             </a>
 
             <p className="mt-6 max-w-md text-sm leading-relaxed text-gray-600">
-              Smart sourcing for precision CNC turning and VMC milling operations. We connect 
-              global buyers with vetted manufacturing partners for complex components, quality 
-              validation, and export delivery support.
+              Your trusted sourcing partner for precision contract manufacturing. 
+              Vetted partners, quality validation, and end-to-end export delivery — globally.
+            
             </p>
 
             {/* Social Links (Optional) */}

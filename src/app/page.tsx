@@ -49,20 +49,21 @@ export default function Home() {
                   ABOUT PARTIQ
                 </div>
                 <h2 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
-                  A Modern Sourcing Partner, Not Just a Directory
+                  A Modern Manufacturing Partner, Not Just a Directory
                 </h2>
                 <p className="mt-6 text-lg leading-relaxed text-gray-600">
-                  For precision manufacturers and buyers worldwide, Partiq streamlines the sourcing 
-                  process for CNC turning and VMC milling operations. We don't just connect you with 
-                  suppliers — we validate their capabilities on CNC lathes and Vertical Machining Centers, 
-                  ensure quality standards, and coordinate logistics so you can focus on building great products.
+                  Partiq is a contract manufacturing partner for businesses that need precision machined components — 
+                  from single prototypes to high-volume production runs. 
+                  We manage the entire process: engineering review, production, quality inspection, and delivery. 
+                  You get precision parts on time, without managing a factory.
                 </p>
                 <div className="mt-8 space-y-4">
                   {[
-                    "Vetted supplier network across multiple regions",
-                    "Quality oversight and inspection coordination",
-                    "Export packaging and global logistics support",
-                    "One accountable point of contact throughout"
+                    "Precision manufacturing from prototype to production",
+                    "Engineering review before production — problems caught early, not late",
+                    "Parts built to your exact specs with full inspection documentation",
+                    "Flexible volumes — no minimum order quantity required",
+                    "One point of contact from quote to delivery"
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <svg className="mt-1 h-5 w-5 flex-shrink-0 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
