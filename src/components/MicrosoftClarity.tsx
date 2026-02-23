@@ -5,10 +5,7 @@ import Clarity from '@microsoft/clarity'
 
 export default function MicrosoftClarity() {
   useEffect(() => {
-    const projectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID
-    if (projectId) {
-      Clarity.init(projectId)
-    }
+    Clarity.init('vlppfq5sd8')
   }, [])
 
   return null
