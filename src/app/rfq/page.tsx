@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 
 const projectTypes = [
@@ -78,7 +76,7 @@ export default function RFQPage() {
   if (status === "success") {
     return (
       <>
-        <Header />
+        
         <main className="flex min-h-screen flex-col items-center justify-center bg-[#0a0f1a] px-6 text-center">
           <div className="flex h-16 w-16 items-center justify-center rounded-full border border-green-500/30 bg-green-500/10 mb-6">
             <svg className="h-7 w-7 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -91,7 +89,7 @@ export default function RFQPage() {
             Submit another →
           </button>
         </main>
-        <Footer />
+      
       </>
     );
   }
