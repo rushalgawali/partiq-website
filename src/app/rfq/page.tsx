@@ -260,7 +260,7 @@ export default function RFQPage() {
                 {status === "submitting" ? "Submitting..." : "Submit RFQ Request →"}
               </button>
 
-              {message && status !== "success" && (
+              {message && (
                 <p className="text-center text-xs text-red-400">{message}</p>
               )}
 
