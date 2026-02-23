@@ -65,7 +65,7 @@ export default function VideoHero() {
           <h1 className="mt-6 text-5xl font-bold tracking-tight md:text-7xl bg-gradient-to-r from-green-400 to-emerald-300 bg-clip-text text-transparent">
               Global Manufacturing Services Done Right
 
-          <span className="mt-2 flex items-center gap-2 text-base md:text-3xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+          <span className="mt-2 flex items-center gap-2 text-base md:text-3xl  bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
               <span className="relative flex h-3 w-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
