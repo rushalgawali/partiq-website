@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from 'next';
-import MicrosoftClarity from './components/MicrosoftClarity';
+import MicrosoftClarity from '../components/MicrosoftClarity';
 
 export const metadata: Metadata = {
   title: "Partiq | Precision Parts Sourcing",
